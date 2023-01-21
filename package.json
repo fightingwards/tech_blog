@@ -1,0 +1,33 @@
+{
+    "name": "tech-blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+      "bcrypt": "^5.1.0",
+      "connect-session-sequelize": "^7.1.5",
+      "dotenv": "^8.6.0",
+      "express": "^4.18.2",
+      "express-handlebars": "^5.3.5",
+      "express-session": "^1.17.3",
+      "mysql2": "^2.3.3",
+      "run": "^1.4.0",
+      "sequelize": "^6.25.6"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "seed": "node seeds/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fightingwards/tech_blog"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/fightingwards/tech_blog/issues"
+    },
+    "homepage": "https://github.com/fightingwards/tech_blog#readme"
+  }
