@@ -1,0 +1,27 @@
+[
+    {
+      "comment_text": "It's a very important concept!",
+      "user_id": 2,
+      "post_id": 1
+    },
+    {
+      "comment_text": "Thank you for sharing!",
+      "user_id": 1,
+      "post_id": 2
+    },
+    {
+      "comment_text": "Now I know!",
+      "user_id": 3,
+      "post_id": 2
+    },
+    {
+      "comment_text": "This is everything!",
+      "user_id": 3,
+      "post_id": 1
+    },
+    {
+      "comment_text": "Yessss!",
+      "user_id": 2,
+      "post_id": 3
+    }
+  ]
