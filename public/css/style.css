@@ -106,7 +106,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-    background-color: #061e50;
+    background-color: #4565a9;
 }
 
 .login-page,
@@ -155,7 +155,7 @@ header h1 {
     margin-bottom: 10px;
     padding: 0px 10px;
     border-style: double;
-    border-color: white;
+    border-color: #4565a9;
 }
 
 main {

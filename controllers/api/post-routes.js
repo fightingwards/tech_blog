@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   try {
     const postData = await Post.findAll({
       //'created_at from Post timestamps: true (default)
-      attributes: ["id", "title", "post_text", "created_at"],
+      attributes: ["id", "title", "content", "created_at"],
       order: [["created_at", "DESC"]], // show latest post first
       include: [
         {
@@ -38,7 +38,7 @@ router.get("/:id", async (req, res) => {
   try {
     const postData = await Post.findOne({
       where: { id: req.params.id },
-      attributes: ["id", "title", "post_text", "created_at"],
+      attributes: ["id", "title", "content", "created_at"],
       order: [["created_at", "DESC"]],
       include: [
         { model: User, attributes: ["username"] },
@@ -85,7 +85,7 @@ router.put("/:id", withAuth, async (req, res) => {
     const updatedPost = await Post.update(
       {
         title: req.body.title,
-        post_text: req.body.post_text,
+        content: req.body.content,
       },
       {
         where: {

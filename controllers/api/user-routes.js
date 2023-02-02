@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ["id", "title", "post_text", "created_at"], //created_at from Post timestamps: true (default)
+          attributes: ["id", "title", "content", "created_at"], //created_at from Post timestamps: true (default)
         },
         {
           model: Comment,
@@ -68,6 +68,7 @@ router.post("/", async (req, res) => {
 // POST /api/user/login, log in for users/ verify users
 // This is where it connects to login.js and fires the fetch('/api/user/login) -> login
 router.post("/login", async (req, res) => {
+  console.log(req.body);
   try {
     const userData = await User.findOne({
       where: { username: req.body.username },

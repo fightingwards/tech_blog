@@ -9,7 +9,7 @@ router.get("/", withAuth, async (req, res) => {
       where: {
         user_id: req.session.user_id,
       },
-      attributes: ["id", "title", "post_text", "created_at"],
+      attributes: ["id", "title", "content", "created_at"],
       include: [
         {
           model: Comment,
@@ -51,7 +51,7 @@ router.get("/edit/:id", withAuth, async (req, res) => {
       where: {
         id: req.params.id,
       },
-      attributes: ["id", "title", "post_text", "created_at"],
+      attributes: ["id", "title", "content", "created_at"],
       include: [
         {
           model: User,
@@ -74,8 +74,8 @@ router.get("/edit/:id", withAuth, async (req, res) => {
 })
 
 // rendering new post page
-router.get("/newpost", (req, res) => {
-  res.render("new-post", { username: req.session.username })
+router.get("/new", (req, res) => {
+  res.render("add-post", { username: req.session.username })
 })
 
 module.exports = router
