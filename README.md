@@ -15,9 +15,9 @@ Build a CMS-style blog site developers will be able to publish their posts and c
 
 ## Usage
 
-Live on [Heroku]
+Live on [Heroku](https://hidden-coast-12038.herokuapp.com/)
 
-![TechBlog]
+![TechBlog](/public/images/TechBlog_Screenshot.png)
 
 ## Installation
 
@@ -53,7 +53,7 @@ UT Web Developement Bootcamp
 
 MIT License
 
-Copyright (c) [2022] [fightingwards]
+Copyright (c) [2023] [fightingwards]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
